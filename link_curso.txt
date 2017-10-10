@@ -8,3 +8,5 @@ Videotutorial 22 - Validaciones
 Videotutorial 23 - moongose save
 Videotutorial 24 - moongose find
 Videotutorial 25 - Sesiones
+Videotutorial 26 - Rutas modulares
+Videotutorial 27 - Custom Middlewares
