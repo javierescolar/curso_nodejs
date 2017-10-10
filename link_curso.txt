@@ -1,0 +1,10 @@
+https://www.youtube.com/watch?v=fwkUyQYvB7s&list=PLpOqH6AE0tNjx0SzNvlsP9-JGJ0zmuFnS&index=5
+
+Curso nodejs codigofacilito
+
+Videotutorial 20 - Virtuals
+Videotutorial 21 - Validaciones
+Videotutorial 22 - Validaciones
+Videotutorial 23 - moongose save
+Videotutorial 24 - moongose find
+Videotutorial 25 - Sesiones

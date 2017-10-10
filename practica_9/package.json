@@ -1,0 +1,15 @@
+{
+  "name": "practica_9",
+  "version": "0.0.1",
+  "description": "Videotutial 8 hola express",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Javier Escolar Salcedo",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.16.1",
+    "jade": "^1.11.0"
+  }
+}
