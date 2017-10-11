@@ -64,7 +64,7 @@ app.post("/sessions", (req,res) => {
     },
     function(err,user){
         req.session.user_id = user._id;
-        res.send(user);
+        res.redirect("/app");
     });
 });
 

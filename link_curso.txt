@@ -10,3 +10,6 @@ Videotutorial 24 - moongose find
 Videotutorial 25 - Sesiones
 Videotutorial 26 - Rutas modulares
 Videotutorial 27 - Custom Middlewares
+Videotutorial 28 - Response locals
+Videotutorial 29 - rutas para CRUD
+Videotutorial 30 - guardar modelo imagen
