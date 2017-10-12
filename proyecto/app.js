@@ -1,7 +1,7 @@
 const express = require("express");
 const bodyParser = require("body-parser");
 var User = require("./models/user").User;
-var session = require("express-session");
+var cookieSession = require("cookie-session");
 var router_app = require("./routes_app");
 var session_middleware = require("./middlewares/session")
 const app = express();
@@ -13,10 +13,10 @@ app.use(bodyParser.json());//peticiones JSON
 app.use(bodyParser.urlencoded({extened: true}));
 
 app.set("view engine","jade");
-app.use(session({
-    secret: "123asd123asd",
-    resave: false,
-    saveUninitialized: false
+
+app.use(cookieSession({
+    name: "session",
+    keys: ["llave-1","llave-2"]
 }));
 
 app.get("/", (req,res) => {

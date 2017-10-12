@@ -33,7 +33,15 @@ router.route("/imagenes/:id")
     
 router.route("/imagenes")
     .get(function(req,res){
-        
+        Image.find({},function(err,imagenes){
+            if(err){
+                console.log("error cargar imagenes index");
+                res.redirect("/app");
+            } else {
+                res.render("app/imagenes/index",{imagenes: imagenes});
+            }
+            
+        });
     })
     .post(function(req,res){
         var data = {

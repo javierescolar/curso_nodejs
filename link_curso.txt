@@ -13,3 +13,6 @@ Videotutorial 27 - Custom Middlewares
 Videotutorial 28 - Response locals
 Videotutorial 29 - rutas para CRUD
 Videotutorial 30 - guardar modelo imagen
+Videotutorial 31 - Cookies en express
+Videotutorial 32 - Nodemon para monitorear cambios
+Videotutorial 33 - Mostrar imágenes

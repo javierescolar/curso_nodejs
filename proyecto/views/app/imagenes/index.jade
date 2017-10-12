@@ -1,0 +1,12 @@
+extends ../../layout.jade
+
+block contenido
+    h1 Imágenes
+    for imagen in imagenes
+        .row
+            .col-md-10
+                h3= imagen.title
+            .col-md-2
+                a(href="/app/imagenes/#{imagen._id}/edit" class="btn btn-warning") Editar
+                a(href="/app/imagenes/#{imagen._id" class="btn btn-danger") Eliminar
+        
