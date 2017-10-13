@@ -14,7 +14,9 @@ router.get("/imagenes/new", (req,res) => {
 });
 
 router.get("/imagenes/:id/edit", (req,res) => {
-    
+    Image.findById(req.params.id,(err,imagen) => {
+            res.render("app/imagenes/edit",{imagen: imagen});
+        });
 });
 
 router.route("/imagenes/:id")
@@ -25,10 +27,27 @@ router.route("/imagenes/:id")
         
     })
     .delete(function(req,res){
-        
+        Image.findOneAndRemove({_id: req.params.id}, function(err){
+            if(!err){
+                res.redirect("/app/imagenes");
+            } else {
+                console.log(err);
+                res.redirect("/app/imagenes/"+ req.params.id);
+            }
+        });
     })
     .put(function(req,res){
-        
+        Image.findById(req.params.id,(err,imagen) => {
+            imagen.title = req.body.title;
+            imagen.save(function(err){
+                if(!err){
+                     res.render("app/imagenes/show",{imagen: imagen});
+                } else {
+                    res.redirect("/app");
+                }
+            })
+           
+        });
     });
     
 router.route("/imagenes")

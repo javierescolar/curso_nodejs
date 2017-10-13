@@ -16,3 +16,5 @@ Videotutorial 30 - guardar modelo imagen
 Videotutorial 31 - Cookies en express
 Videotutorial 32 - Nodemon para monitorear cambios
 Videotutorial 33 - Mostrar imágenes
+Videotutorial 34 - Editar registros
+Videotutorial 35 - eliminar registros

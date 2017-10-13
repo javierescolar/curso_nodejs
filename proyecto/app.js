@@ -3,7 +3,8 @@ const bodyParser = require("body-parser");
 var User = require("./models/user").User;
 var cookieSession = require("cookie-session");
 var router_app = require("./routes_app");
-var session_middleware = require("./middlewares/session")
+var session_middleware = require("./middlewares/session");
+var methodOverride = require("method-override");
 const app = express();
 
 
@@ -11,6 +12,8 @@ app.use(express.static('public'));
 
 app.use(bodyParser.json());//peticiones JSON
 app.use(bodyParser.urlencoded({extened: true}));
+
+app.use(methodOverride("_method"));
 
 app.set("view engine","jade");
 

@@ -2,11 +2,15 @@ extends ../../layout.jade
 
 block contenido
     h1 Imágenes
+    a(href="/app" class="btn btn-default") Volver
+    a(href="/app/imagenes/new" class="btn btn-success") Nueva
     for imagen in imagenes
         .row
             .col-md-10
                 h3= imagen.title
-            .col-md-2
+            .col-md-1
                 a(href="/app/imagenes/#{imagen._id}/edit" class="btn btn-warning") Editar
-                a(href="/app/imagenes/#{imagen._id" class="btn btn-danger") Eliminar
+             .col-md-1
+                form(action="/app/imagenes/#{imagen._id}?_method=DELETE" method="POST")
+                    input(type="submit" value="Eliminar" class="btn btn-danger")
         
