@@ -5,6 +5,7 @@ var cookieSession = require("cookie-session");
 var router_app = require("./routes_app");
 var session_middleware = require("./middlewares/session");
 var methodOverride = require("method-override");
+var formidable = require("express-form-data");
 const app = express();
 
 
@@ -14,6 +15,8 @@ app.use(bodyParser.json());//peticiones JSON
 app.use(bodyParser.urlencoded({extened: true}));
 
 app.use(methodOverride("_method"));
+
+app.use(formidable.parse({ keepExtensions:true }));
 
 app.set("view engine","jade");
 
@@ -42,15 +45,6 @@ app.post("/users", (req,res) => {
         password_confirmation: req.body.password_confirmation,
         username: req.body.username
     });
-   /* user.save( (err,user,numero) => {
-        if (err){
-            console.log(String(err));
-            res.render("login");
-        } else {
-            res.send(JSON.stringify(user));
-        }
-        
-    });*/
     
     user.save().then(function(us){
         res.send("Guardamos tus datos");

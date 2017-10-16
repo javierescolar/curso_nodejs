@@ -20,3 +20,6 @@ Videotutorial 34 - Editar registros
 Videotutorial 35 - eliminar registros
 Videotutorial 36 - Refactor, encontrar registro en middleware
 Videotutorial 37 - Populate user
+Videotutorial 38 - Validar propietario de la imagen
+Videotutorial 39 - Subir imágenes
+Videotutorial 40 - Mostrar imágenes
