@@ -6,8 +6,10 @@ block contenido
     a(href="/app/imagenes/new" class="btn btn-success") Nueva
     for imagen in imagenes
         .row
-            .col-md-10
+            .col-md-9
                 h3= imagen.title
+            .col-md-1
+                a(href="/app/imagenes/#{imagen._id}" class="btn btn-info") Ver
             .col-md-1
                 a(href="/app/imagenes/#{imagen._id}/edit" class="btn btn-warning") Editar
              .col-md-1

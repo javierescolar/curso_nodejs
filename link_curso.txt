@@ -18,3 +18,5 @@ Videotutorial 32 - Nodemon para monitorear cambios
 Videotutorial 33 - Mostrar imágenes
 Videotutorial 34 - Editar registros
 Videotutorial 35 - eliminar registros
+Videotutorial 36 - Refactor, encontrar registro en middleware
+Videotutorial 37 - Populate user
