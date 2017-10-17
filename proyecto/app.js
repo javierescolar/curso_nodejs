@@ -26,7 +26,6 @@ app.use(cookieSession({
 }));
 
 app.get("/", (req,res) => {
-    console.log(req.session.user_id)
     res.render("index");
 });
 
@@ -49,7 +48,6 @@ app.post("/users", (req,res) => {
     user.save().then(function(us){
         res.send("Guardamos tus datos");
     },function(err){
-        console.log(String(err));
         res.send("NO guardamos tus datos");
     });
 });
